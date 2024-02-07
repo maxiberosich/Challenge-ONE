@@ -42,6 +42,7 @@ function encriptar() {
     //Muestro el texto encriptado en donde estaba la imagen inicialmente
     document.getElementById("resultado").style.display = "inline-block";
     document.getElementById("texto-resultado").value = nuevoTexto;
+    nuevoTexto = "";
 
 }
 
