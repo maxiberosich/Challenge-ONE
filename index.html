@@ -19,19 +19,24 @@
     <main>
         <section class="principal">            
 
-            <textarea class="texto-ingresado" required 
+            <textarea id="texto-usuario" class="texto-ingresado" required 
             placeholder="Ingrese el texto aquí"></textarea>
 
             <p class="informacion">Solo letras minúsculas y sin acentos</p>
 
-            <button class="boton-encriptar">Encriptar</button>
+            <button onclick="encriptar();" class="boton-encriptar">Encriptar</button>
 
-            <button class="boton-desencriptar">Desencriptar</button>
+            <button onclick="desencriptar();" class="boton-desencriptar">Desencriptar</button>
 
         </section>
 
         <section class="mostrar-texto">
-            <img class="imagen-busqueda" src="imagenes/Busqueda.png" alt="Niño con lupa">
+            <img id="busqueda" class="imagen-busqueda" src="imagenes/Busqueda.png" alt="Niño con lupa">
+            <div id="resultado">
+                <textarea id="texto-resultado" class="resultado-c"></textarea>
+                <button onclick="copiar();" class="boton-copiar">Copiar</button>
+            </div>
+            
         </section>
         
     </main>
@@ -40,6 +45,7 @@
 
     </footer>
 
+    <script src="app.js"></script>
 </body>
 
 </html>

@@ -10,7 +10,7 @@ header {
 
 .principal {
     padding: 1em 4em;
-    width: 740px;
+    width: 640px;
     margin: 0 auto;
     display: inline-block;
 }
@@ -20,8 +20,8 @@ header {
     color: #0A3871;
     width: 577px;
     height: 248px;
-    top: 168px;
-    left: 240px;
+    top: 108px;
+    left: 140px;
     font-family: Inter;
     font-size: 32px;
     font-weight: 400;
@@ -63,10 +63,18 @@ button {
 
 .mostrar-texto {
     display: inline-block;
-}
-
-.imagen-busqueda {
     width: 300px;
     height: 500px;
     border-radius: 32px;
+}
+
+.boton-copiar{
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    width: 205px;
+}
+
+.resultado-c{
+    width: 200px;
+    height: 400px;
 }
