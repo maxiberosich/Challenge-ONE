@@ -1,6 +1,7 @@
 let texto = document.getElementById("texto-usuario");
 let nuevoTexto = "";
 document.getElementById("resultado").style.display = "none";
+document.querySelector("#copiar").addEventListener("click", copiar);
 
 function encriptar() {
 
@@ -96,6 +97,10 @@ function desencriptar() {
 
 function copiar() {
 
-       
-
+    let copiarTexto = document.querySelector("#texto-resultado");
+    copiarTexto.select();
+    document.execCommand("copy");
+    // Deseleccionar el texto para evitar confusiones visuales
+    window.getSelection().removeAllRanges();
+    
 }
