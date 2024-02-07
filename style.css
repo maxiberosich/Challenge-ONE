@@ -3,26 +3,31 @@ body {
 }
 
 header {
-    padding: 20px 0;
+    padding: 10px 0;
     width: 940px;
     position: relative;
 }
 
 .principal {
     padding: 1em 4em;
-    width: 940px;
+    width: 740px;
     margin: 0 auto;
+    display: inline-block;
 }
 
 .texto-ingresado {
     border: none;
     color: #0A3871;
     width: 577px;
+    height: 248px;
+    top: 168px;
+    left: 240px;
     font-family: Inter;
     font-size: 32px;
     font-weight: 400;
     letter-spacing: 0em;
     text-align: left;
+    position: absolute;
 }
 
 .informacion {
@@ -40,18 +45,28 @@ header {
 }
 
 button {
-    width: Fixed (328px);
-    height: Hug (67px);
+    width: 300px;
+    height: 67px;
     padding: 24px;
     border-radius: 24px;
     gap: 8px;
 }
 
-.boton-encriptar{
+.boton-encriptar {
     background-color: #0A3871;
 }
 
-.boton-desencriptar{
+.boton-desencriptar {
     background-color: #D8DFE8;
     border: 1px solid #0A3871;
+}
+
+.mostrar-texto {
+    display: inline-block;
+}
+
+.imagen-busqueda {
+    width: 300px;
+    height: 500px;
+    border-radius: 32px;
 }
