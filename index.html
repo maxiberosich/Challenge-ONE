@@ -17,32 +17,38 @@
     </header>
 
     <main>
-        <section class="principal">            
+        <section class="principal">
+            <div class="caja-texto">
+                <textarea id="texto-usuario" class="texto-ingresado" required
+                    placeholder="Ingrese el texto a encriptar/desencriptar aquí"></textarea>
+            </div>
 
-            <textarea id="texto-usuario" class="texto-ingresado" required 
-            placeholder="Ingrese el texto aquí"></textarea>
+            <div class="botones">
+                <p class="informacion">Solo letras minúsculas y sin acentos</p>
 
-            <p class="informacion">Solo letras minúsculas y sin acentos</p>
+                <button onclick="encriptar();" class="boton-encriptar">Encriptar</button>
 
-            <button onclick="encriptar();" class="boton-encriptar">Encriptar</button>
+                <button onclick="desencriptar();" class="boton-desencriptar">Desencriptar</button>
+            </div>
 
-            <button onclick="desencriptar();" class="boton-desencriptar">Desencriptar</button>
 
         </section>
 
         <section class="mostrar-texto">
+
             <img id="busqueda" class="imagen-busqueda" src="imagenes/Busqueda.png" alt="Niño con lupa">
+
             <div id="resultado">
                 <textarea id="texto-resultado" class="resultado-c"></textarea>
                 <button id="copiar" onclick="copiar();" class="boton-copiar">Copiar</button>
             </div>
-            
+
         </section>
-        
+
     </main>
 
     <footer>
-
+        <p class="copyright"><a href="https://github.com/maxiberosich" target="_blank">Maximiliano Berosich - 2024</p>
     </footer>
 
     <script src="app.js"></script>

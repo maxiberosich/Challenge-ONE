@@ -4,7 +4,7 @@ body {
 
 header {
     padding: 10px 0;
-    width: 940px;
+    width: auto;
     position: relative;
 }
 
@@ -18,8 +18,8 @@ header {
 .texto-ingresado {
     border: none;
     color: #0A3871;
-    width: 577px;
-    height: 248px;
+    width: 555px;
+    height: 361px;
     top: 108px;
     left: 140px;
     font-family: Inter;
@@ -28,6 +28,8 @@ header {
     letter-spacing: 0em;
     text-align: left;
     position: absolute;
+    border-radius: 24px;
+    padding: 5px 5px 5px 10px;
 }
 
 .informacion {
@@ -42,6 +44,10 @@ header {
     text-align: left;
     color: #495057;
     margin: 10px 0 0 0;
+}
+
+.botones {
+    margin-top: 400px;
 }
 
 button {
@@ -83,4 +89,70 @@ button {
     line-height: 36px;
     letter-spacing: 0em;
     text-align: left;
+    border-radius: 24px;
+    padding: 5px;
+}
+
+footer a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.copyright {
+    text-align: center;
+    margin: 40px auto 20px auto;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1089px) {
+    h1 {
+        text-align: center;
+    }
+
+    .principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+
+    .caja-texto {
+        width: 80%;
+    }
+
+    .texto-ingresado{
+        width: 75%;
+    }
+
+    .botones {
+        margin-left: 50px;
+    }
+
+    .botones button {
+        display: inline-block;
+        margin-top: 20px;
+        width: 280px;
+        height: 67px;
+        padding: 24px;
+    }
+
+    .mostrar-texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+
+    .resultado-c {
+        width: 500px;
+        height: 200px;
+    }
+
+    .boton-copiar {
+        width: 500px;
+        display: block;
+    }
 }
