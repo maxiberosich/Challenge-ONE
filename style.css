@@ -105,6 +105,7 @@ footer a {
     margin: 40px auto 20px auto;
 }
 
+/*Configuraciones para tablet*/
 @media only screen and (min-width: 768px) and (max-width: 1089px) {
     h1 {
         text-align: center;
@@ -153,6 +154,57 @@ footer a {
 
     .boton-copiar {
         width: 500px;
+        display: block;
+    }
+}
+
+/*Configuraciones para celulares*/
+@media only screen and (max-width: 430px) {
+    h1 {
+        text-align: center;
+    }
+    
+    .principal {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+        flex-direction: column;
+        height: 100vh; /* Ocupa toda la altura de la ventana */
+        width: auto;
+    }
+    
+    .texto-ingresado {
+        width: 90%; /* Ocupa todo el ancho del contenedor */
+        left: 15px;
+    }
+
+    .botones {
+        margin-left: auto;
+    }
+
+    .botones button {
+        display: inline-block;
+        margin-top: 20px;
+        width: 280px;
+        height: 67px;
+        padding: 24px;
+    }
+
+    .mostrar-texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+
+    .resultado-c {
+        width: 343px;
+        height: 200px;
+    }
+
+    .boton-copiar {
+        width: 355px;
         display: block;
     }
 }
